@@ -1,0 +1,13 @@
+
+<div class="container">
+<app-package-summary-header></app-package-summary-header>
+<div class="row">
+    <ul>
+        <li class="review" *ngFor="let review of reviews">
+            <app-package-review-item [review]="review"></app-package-review-item>
+        </li>
+    </ul>
+</div>
+</div>
+
+

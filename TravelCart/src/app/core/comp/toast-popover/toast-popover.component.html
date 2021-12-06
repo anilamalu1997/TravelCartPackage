@@ -1,0 +1,13 @@
+<div class="app-toast-popover">
+    <ul class="row">
+        <li  class="col-12 pam mtm" *ngFor="let message of messages">
+            <p class="pvn prl man">
+                <span class="message">{{message?.text}}</span>
+                <i (click)="remove(message?.id)" class="right mrm mdi mdi-close"></i>
+            </p>
+            
+        </li>
+    </ul>
+</div>
+
+

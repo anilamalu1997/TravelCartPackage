@@ -1,0 +1,19 @@
+<section class="card package-summary">
+    <div class="image-container">
+        <img src="{{package?.location | imageRl}}">
+    </div>
+    <div class="descruptive">
+        <h2>{{package?.name}}</h2>
+        <p class="amount">{{package?.price | currency:'INR':'symbol-narrow':'4.2-2'}}</p>
+        <h2>{{package?.details}}</h2>
+        <div>
+            <app-rating [disabled]="true" [rating]="rating"></app-rating>
+            <span>(2)</span>
+        </div>
+        <div class=" button-pane">
+            <button (click)="addToCart()"><i class="mdi mdi-cart "></i>Add to Cart</button>
+            <button (click)="addReview()"><i class="mdi mdi-comment-edit"></i>Add Review</button>
+        </div>
+    </div>
+</section>
+<app-review-popup #reviewPopup (save)="saveReview($event)"></app-review-popup>

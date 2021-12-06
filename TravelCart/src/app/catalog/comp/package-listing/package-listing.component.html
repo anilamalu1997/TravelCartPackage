@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div class="row">
+        <ul class="summary">
+            <li [ngClass]="{'highlight': summary.isHighlighted}" *ngFor="let summary of summaries" (click)="toggleSelection(summary)">
+                                <span class="left">{{summary.location}}</span>
+                <span class="right">{{summary.count}}</span>
+            </li>
+            <li>
+                Total {{highlightedCount}} / {{totalCount}}
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+
+        <ul class="packages">
+            <li *ngFor="let package of packages">
+                <app-package-list-item [package]="package"></app-package-list-item>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.package-container {
+    padding: 20px;
+    .package {
+        .image-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px 15px 0 0;
+            height: 240px;
+            img {
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+        .summary {
+            padding: 10px;
+            .text-content {
+                width: calc(100% - 52px);
+                h2 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #707070;
+                    margin: 0;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .amount {
+                    font-size: 20px;
+                    margin: 0;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            i {
+                font-size: 36px;
+            }
+
+            .cart-icon{
+                padding-top: 20px;
+                padding-right: 10px;
+                font-size: 25px;
+            }
+        }
+    }
+}

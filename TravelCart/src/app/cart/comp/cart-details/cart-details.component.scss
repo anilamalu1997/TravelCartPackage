@@ -1,0 +1,59 @@
+.container{
+    margin-top: 80px;
+}
+
+table{
+    width: 100%;
+    th{
+        
+        padding: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ededed;
+        
+    }
+
+    td{
+        font-weight: 500;
+        border-bottom: 1px solid #ededed;
+           
+           
+        
+    }
+
+    tr{
+        border:1px solid black;
+
+    }
+
+    tr:last-child{
+        td{
+            border-bottom: none;
+        }
+    }
+
+
+    .text-right{
+        text-align:right ;
+    }
+}
+
+
+.image-container{
+    width: 64px;
+    height:64px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    img{
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .package-name{
+        height: 64px;
+        line-height: 64px;
+    }
+}

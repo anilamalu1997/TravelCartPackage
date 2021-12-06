@@ -1,0 +1,169 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@mdi/font/scss/materialdesignicons.scss";
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #f1f3fa;
+    font-family: Roboto;
+    color: #707070;
+
+}
+
+section,
+header,
+div,
+p,
+ul,
+li{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin:0; 
+   
+   
+}
+
+
+
+
+input[type="text"]{
+    height: 44px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #ededed;
+}
+
+button{
+    height: 64px;
+    border-radius: 5px;
+    background: #713ab7;
+    color : #fff;
+    font-weight: 600px;
+    border: 1px solid #707070;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(127,67,192,0.16);
+}
+
+
+
+
+/*---grid====*/
+
+.container{
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+
+    @for $i from 1 through 12 {
+        .col-#{$i}{
+            float: left;
+            width: $i/12 * 100%;
+        }
+    }
+}
+
+$dimension-n:0;
+$dimension-s:5;
+$dimension-m:10;
+$dimension-l:20;
+$dimension-vl:40;
+$dimension-xl:80;
+$dimension-xxl:160;
+
+$layouts:(
+    l:left,
+    h:left right,
+    r:right,
+    t:top,
+    b:bottom,
+    v:top botoom,
+    a:left right-top bottom,
+);
+
+$spacings:(
+    p:padding,
+    m:margin,
+
+);
+
+$dimensions: (
+    n: $dimension-n,
+    s: $dimension-s,
+    m: $dimension-m,
+    l: $dimension-l,
+    vl: $dimension-vl,
+    xl: $dimension-xl,
+    xxl: $dimension-xxl,
+);
+
+$selector: " ";
+
+@each $spacing-key, $spacing-value in $spacings{
+    @each $layout-key, $layout-value in $layouts{
+        @each $dimension, $size in dimensions{
+            .#{$spacing-key}#{$layout-key}#{dimension  }  {
+                @each $layout-entry in $layout-value{
+                    #{$spacing-value}-#{$layout-entry}: #{$size}
+            px;
+        }
+            } 
+         }
+    
+}
+}
+    
+
+
+.left{
+    display: block;
+    float: left;
+}
+
+.right{
+    display: block;
+    float: right;
+}
+
+//   component
+
+.card{
+    background: #fff;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(147, 170,185, 0.16);
+
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.border{
+    border:1px solid #ededed;
+}
+
+
+.amount{
+    color: #d21a1a;
+}
+
+
+

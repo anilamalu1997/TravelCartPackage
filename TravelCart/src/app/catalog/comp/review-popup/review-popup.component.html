@@ -1,0 +1,28 @@
+<div *ngIf="isShowing" class="popup-container">
+    <section class="review-popup">
+        <i class="right mrm mdi mdi-close" (click)="hide()"></i>
+        <form [formGroup]="reviewForm" (ngSubmit)="onReviewSubmit()">
+            
+            <div class="row  mtm">
+            <div class="col-6  text-container prm">
+                <label>Name</label>
+                <input formControlName="reviewer" type="text">
+            </div>
+           <div class="col-6 plm ptl">
+            <app-rating [(rating)]="rating"></app-rating>
+           </div>
+            </div>
+
+            <div class="mtm row text-container">
+                <label>Review</label>
+                <textarea formControlName="review" ></textarea>
+            </div>
+            <div class="row mtm">
+                <button class=" phl right">Add Review</button>
+            </div>
+           
+            
+
+        </form>
+    </section>
+</div>

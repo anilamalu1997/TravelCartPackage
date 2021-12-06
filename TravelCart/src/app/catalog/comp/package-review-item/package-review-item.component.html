@@ -1,0 +1,17 @@
+<section class="card mtm pam">
+    <div class="profile-image-container">
+        <i class="mdi mdi-account"></i>
+    </div>
+    <div class=" left review-detail">
+        <div class="row">
+            <span class="left reviewer mrm">
+                {{review.reviewer}}
+            </span>
+            <app-rating [disabled]="true" [rating]="review.rating"></app-rating>
+        </div>
+        <div class="row">
+            <p>{{review.review}}</p>
+        </div>
+    </div>
+
+</section>

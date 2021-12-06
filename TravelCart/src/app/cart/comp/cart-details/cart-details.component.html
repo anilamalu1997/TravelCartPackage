@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row card mtm">
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Description</th>
+                    <th>QTY</th>
+                    <th>unit price</th>
+                    <th>Total Price</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cartItem of cartItems">
+
+                    <td>
+                        <div>
+                            <div class=" left image-container">
+                                <img src="{{cartItem.image | imageRl}}">
+                            </div>
+                            <div class="left package-name">
+                                {{cartItem.name}}
+                            </div>
+                        </div>
+
+
+                    </td>
+                    <td class="text-right">{{cartItem.qty}}</td>
+                    <td class="text-right"><span class="amount"> {{cartItem.unitPrice}}</span></td>
+                    <td class="text-right"><span class="amount">{{cartItem.totalPrice}}</span></td>
+                    <td class="text-right">
+                        <a class="mrm" href="#" (click)="removeItem(cartItem.id, $event)">Remove</a>
+                        <a class="mrm" href="#" (click)="removeAllItems(cartItem.id, $event)">RemoveAll</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td><span>Cart Price</span>
+                        <span class="amount bold">
+                            {{totalPrice | currency:'INR':'symbol-narrow':'4.2-2'}}
+                        </span>
+                    </td>
+                    <td class="text-right">
+                        <a class="mrm" href="#" (click)="emptyCart($event)">Empty Cart</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>

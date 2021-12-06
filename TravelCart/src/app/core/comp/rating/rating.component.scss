@@ -1,0 +1,17 @@
+ul{
+    display: block;
+    float: left;
+    list-style: none;
+
+    li{
+        float: left;
+        margin-right: 5px;
+        color: #cfc5c5;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    li.filled{
+        color: #ef9771;
+    }
+}

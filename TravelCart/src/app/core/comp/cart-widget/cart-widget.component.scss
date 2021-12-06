@@ -1,0 +1,21 @@
+.cart-widget{
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    i{
+        
+        font-size: 36px;
+        margin-right: 10px;
+    }
+
+    .summary{
+        float: right ;
+        span {
+            display: block;
+        }
+        span.items {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+}
