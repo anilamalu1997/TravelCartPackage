@@ -75,7 +75,7 @@ export class CoreCartService {
 
           widgetModel.count = cartItems
             .map(item => item.id)
-            .filter((id, index) => cartItems.findIndex((item, index) => item.id === id))
+            .filter((id, index) => cartItems.findIndex((item, index) => item.id === id) === index)
             .length;
           return widgetModel;
         }))

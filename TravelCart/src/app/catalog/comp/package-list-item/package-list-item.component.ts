@@ -17,7 +17,7 @@ export class PackageListItemComponent implements OnInit {
   @Input()
   package!: Package;
 
-  rating = 5;
+  rating = 3;
 
   constructor(
     private toastService: ToastPopoverService,

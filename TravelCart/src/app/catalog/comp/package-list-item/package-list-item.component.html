@@ -10,7 +10,7 @@
     <div class="left text-content">
         <h2 >{{package.name}}</h2>
         <p class="amount">{{package.price | currency:'INR':'symbol-narrow':'4.2-2'}}</p>
-        <div>
+        <div class="star-rating">
             <app-rating [disabled]="true" [rating] = "rating"></app-rating>
             <span>(2)</span>
         </div>

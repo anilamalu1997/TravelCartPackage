@@ -1,3 +1,10 @@
+.card{
+    padding: 15px;
+    width:100%;
+    display: flex;
+}
+
+
 .profile-image-container{
     height: 56px;
     width: 56px;
@@ -7,6 +14,7 @@
     line-height: 56px;
     font-size: 32px;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .review-detail{
@@ -17,4 +25,10 @@
 font-weight: 500;
 font-size: 18px;
 color: #707070;
+padding-right: 20px;
+}
+
+.star-rating{
+    padding-left: 40px;
+    font-size: 18px;
 }

@@ -1,11 +1,11 @@
-.popup-container{
+.popup-container {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     height: 100wh;
-    width: 100vw;
-    background: rgba(0,0,0,0.25);
-    .review-popup{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    .review-popup {
         width: 730px;
         margin-top: 80px;
         background: #fff;
@@ -14,36 +14,72 @@
         margin-right: auto;
         height: 375px;
         border-radius: 10px;
+        
+        .star-rating{
+           
+            padding-left: 50px;
+            padding-top: 40px;
+            font-size: 35px;
+            
+            
+        }
 
-        i.mdi-close{
-            font-size: 24px;
+
+        i.mdi-close {
+            font-size: 36px;
+            color: #6a6a6a;
+            float: right;
             line-height: 32px;
             cursor: pointer;
         }
 
-        textarea{
+        textarea {
             height: 120px;
-            border:1px solid #ededed;
+            border: 1px solid #ededed;
             outline: none;
-            border-radius: 10px;
-
+            border-radius: 5px;
+            padding-bottom: 10px;
         }
 
+            
+    button{
+        min-width: 100px;
+        margin-right: 56px;
+        font-size: 18px;
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 51px;
+        background: #713ab7;
+        color: #fff;
+        font-weight: bold;
+        
+
+       
     }
 }
 
-
-.text-container{
-    label{
-        font-size: 12px;
-        font-weight:600 ;
+.text-container {
+    label {
+        font-size: 15px;
+        font-weight: bold;
         display: block;
         width: 100%;
+        color: #6a6a6a;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        font-family: Roboto;
     }
 
     input,
-    textarea{
+    textarea {
         display: block;
         width: 100%;
+        background: #fff;
+       
     }
+}
+
+    
+    
+    
 }

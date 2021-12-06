@@ -1,8 +1,12 @@
 .package-summary{
 margin-top: 20px;
 float: left;
-width: 1500px;
-padding: 20px;
+width: 100%;
+padding: 25px;
+box-shadow: 0px 5px 20px rgba(147, 170, 185, 0.16);
+background-color: #fff;
+border-radius: 15px;
+
 
 .image-container{
     overflow: hidden;
@@ -14,41 +18,56 @@ padding: 20px;
 
     img{
         height: 240px;
-        max-width: 100%;
+        max-width: 320px;
     }
 }
 
-.desc{
+.descriptive{
     float: left;
     width: calc(100% - 400px);
+    padding: 10px;
+    .package-title{
+        width: 100%;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 20px;
+        color: #707070;
+    }
     h2{
         float: left;
         width: 100%;
         font-family: Roboto;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
-        color: #707070;
+        color: #6a6a6a;
         margin: 0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+
+    
     }
 
     .button-pane{
         float: left;
         width: 100%;
-        padding-top: 40px;
+        padding-top: 60px;
+        
         
         
         button{
             min-width: 124px;
             margin-right: 20px;
+            font-size: 20px;
+            padding-right: 50px;
+            box-shadow: 0px 3px 6px rgba(127, 67, 192, 0.16);
             
 
             i{
-                font-size: 24px;
+                font-size: 23px;
                 margin-right: 20px;
+                padding-left: 5px;
                 
 
                 
@@ -60,5 +79,24 @@ padding: 20px;
     }
 
 }
+
 }
+
+.amount{
+    font-weight: normal;
+    font-size: 20px;
+    
+    
+}
+
+.review-heading{
+   padding-top: 330px;
+   font-weight: bold;
+   font-size: 20px;
+   color: #707070;
+
+}
+
+
+
 

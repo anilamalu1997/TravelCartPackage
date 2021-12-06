@@ -5,7 +5,7 @@
     <li [ngClass]="{'filled' : star.filled, 'pointer' : !disabled}" class="star" *ngFor="let star of stars; index as i"
     (click)="changeRating(i)">
         <i *ngIf="star.filled" class="mdi mdi-star"></i>
-        <i *ngIf="!star.filled" class="mdi mdi-star-outline"></i>
+        <i *ngIf="!star.filled" class="mdi mdi-star"></i>
     </li>
 <!--      
     <li class="filled" *ngFor="let star of filledStars; index as i">
